@@ -1,0 +1,6 @@
+#include "run_sbndpds_ana.fcl"
+
+physics.analyzers.opanatree.SaveMCParticles: true
+physics.analyzers.opanatree.SaveMCTruth: true
+physics.analyzers.opanatree.SaveOpHits: false
+physics.analyzers.opanatree.SaveOpFlashes: false

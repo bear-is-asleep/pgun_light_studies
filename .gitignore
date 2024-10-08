@@ -1,0 +1,6 @@
+*.log
+*.root
+*data/
+*data2/
+*.csv
+*.txt
