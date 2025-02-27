@@ -79,7 +79,7 @@ def run_simulation(params):
         subprocess.run(f"lar -c {top_dir}run_pdsana.fcl -s {temp_dir}/{prod_file}_G4*DetSim*Reco1*.root", shell=True)
         
         # Move files
-        subprocess.run(["mv", "larcv.root", larcv_file])
+        subprocess.run(["mv", "larcv_mc*.root", larcv_file])
         subprocess.run(["mv", "opana_tree.root", opsana_file])
         subprocess.run(f"mv opana*.root larcv_*.root {base_dir}/data2/", shell=True)
 
